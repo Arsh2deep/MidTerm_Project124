@@ -6,51 +6,20 @@ using System.Threading.Tasks;
 
 namespace MidTerm_Project124
 {
-    public class Coffee : Product
+    public class Coffee : Drinks
     {
-        public Coffee()
+        public string RoastType { get; }
+
+        public Coffee(string name, decimal price, int points, Size drinkSize, string roastType) : base(name, price, points, drinkSize)
         {
-            Name = "Coffee";
-            Price = 2.0;
-            Points = 1;
+            RoastType = roastType;
         }
 
-        public override void Buy()
+        public override string ToString()
         {
-            // Deduct the price from the customer's balance
-            // Add points to the customer's membership account
-        }
-    }
-
-    public class Tea : Product
-    {
-        public Tea()
-        {
-            Name = "Tea";
-            Price = 1.5;
-            Points = 1;
+            return base.ToString() + " - Roast Type: " + RoastType;
         }
 
-        public override void Buy()
-        {
-            // Deduct the price from the customer's balance
-            // Add points to the customer's membership account
-        }
-    }
-    public class Pastry : Product
-    {
-        public Pastry()
-        {
-            Name = "Pastry";
-            Price = 2.5;
-            Points = 2;
-        }
+    }//Class
 
-        public override void Buy()
-        {
-            // Deduct the price from the customer's balance
-            // Add points to the customer's membership account
-        }
-    }
-
-}
+}//NameSpace

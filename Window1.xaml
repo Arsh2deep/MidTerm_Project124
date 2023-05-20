@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MidTerm_Project124"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="AddNewProductWindow" Height="450" Width="800">
+    <Canvas Margin="0,0,0,-6" Height="NaN" Background="#FF7AB6BB">
+        <Label Content="Name" Canvas.Left="10" Canvas.Top="28"/>
+        <Label Content="Price" Canvas.Left="10" Canvas.Top="59"/>
+        <Label Content="Points" Canvas.Left="10" Canvas.Top="90"/>
+        <CheckBox Content="Is Heated" Canvas.Left="12" Canvas.Top="220" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106"/>
+        <CheckBox Content="Has Dairy or Combo" Canvas.Left="12" Canvas.Top="240" Width="137" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListBox Height="396" Width="494" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="296" Canvas.Top="19"/>
+        <Button Content="Gift Card" Canvas.Left="11" Canvas.Top="400" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Height="30"/>
+        <Label Content="Color or Style" Canvas.Left="7" Canvas.Top="304" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-16.805"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-3.92"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Content="Tumbler" Canvas.Left="11" Canvas.Top="342" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="88"/>
+        <Button Content="Mug" Canvas.Left="130" Canvas.Top="341" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="134"/>
+        <Label Content="Size" Canvas.Left="12" Canvas.Top="122" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40"/>
+        <ComboBox Canvas.Left="92" Canvas.Top="129" Width="144" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Roast or Tea" Canvas.Top="155"/>
+        <ListBox Height="26" Width="207" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="57" Canvas.Top="28" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Breakfast" Canvas.Left="10" Canvas.Top="260" HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="69"/>
+        <Button Content="Lunch" Canvas.Left="96" Canvas.Top="260" Height="27" Width="68" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListBox Height="26" Width="207" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="57" Canvas.Top="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <ListBox Height="26" Width="207" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="57" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <ListBox Height="26" Width="172" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="92" Canvas.Top="301" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <ListBox Height="26" Width="172" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="92" Canvas.Top="156" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Coffee" Canvas.Left="24" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Center" Width="56"/>
+        <Button Content="Tea" Canvas.Left="108" Canvas.Top="192" Width="56" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+    </Canvas>
+
 </Window>

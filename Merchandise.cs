@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MidTerm_Project124
 {
-    internal class Drink
+    public abstract class Merchandise : Product
     {
+        public Merchandise(string name, double price, int points) : base(name, price, points) { }
     }
 }

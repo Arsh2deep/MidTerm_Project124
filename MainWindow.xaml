@@ -1,18 +1,18 @@
-﻿<Window x:Class="MidTerm_Project124.MainWindow"
+﻿<Window x:Name="GalaxyCowLattes" x:Class="MidTerm_Project124.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MidTerm_Project124"
         mc:Ignorable="d"
-        Title="MainWindow" Height="460" Width="776">
+        Title="Galaxy Cow Lattes" Height="460" Width="776" Background="#FF08B7AB">
     <Canvas Height="NaN" Margin="0,0,600,119" Width="NaN">
-        <Button Content="Add New User" Canvas.Left="39" Canvas.Top="359" Height="42" Width="118"/>
+        <Button Content="Add New Product" Canvas.Left="39" Canvas.Top="359" Height="42" Width="118" Click="Button_Click"/>
         <Button Content="Use Points" Canvas.Left="466" Canvas.Top="206" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="9.739,-4.689" Height="41" Width="82"/>
-        <Button Content="Buy Product" Canvas.Left="466" Canvas.Top="130" HorizontalAlignment="Center" VerticalAlignment="Top" Height="43" Width="82"/>
-        <Button Content="Member Information" Canvas.Left="641" Canvas.Top="48" Height="17" Width="129" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Buy Product" Canvas.Left="466" Canvas.Top="130" HorizontalAlignment="Center" VerticalAlignment="Top" Height="43" Width="82" Click="Button_Click_1"/>
+        <Button Content="Member Information" Canvas.Left="637" Canvas.Top="37" Height="17" Width="129" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <ComboBox Canvas.Left="566" Canvas.Top="10" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <ListBox Height="311" Width="235" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="212" Canvas.Top="56" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListBox Height="311" Width="235" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="212" Canvas.Top="56" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="ListBox_SelectionChanged"/>
         <RichTextBox Height="319" Width="180" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="10" Canvas.Top="23">
             <FlowDocument>
                 <Paragraph>
@@ -21,7 +21,7 @@
             </FlowDocument>
         </RichTextBox>
         <ListBox Height="315" Width="200" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="566" Canvas.Top="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Label Content="Products" Canvas.Left="290" Canvas.Top="31" Height="34" Width="62" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+        <Label Content="Products" Canvas.Left="290" Canvas.Top="31" Height="34" Width="62" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" Background="{x:Null}" Foreground="Black">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

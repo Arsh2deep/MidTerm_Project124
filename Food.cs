@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace MidTerm_Project124
 {
-    internal class Food
+    public abstract class Food : Product
     {
-    }
-}
+        public bool IsHeated { get; }
+
+        protected Food(string name, double price, int points, bool isHeated) : base(name, price, points)
+        {
+            IsHeated = isHeated;
+        }
+
+    }//Class
+
+}//NameSpace

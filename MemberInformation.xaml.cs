@@ -23,5 +23,15 @@ namespace MidTerm_Project124
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Add
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

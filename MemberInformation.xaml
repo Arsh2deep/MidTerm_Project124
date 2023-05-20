@@ -7,17 +7,17 @@
         mc:Ignorable="d"
         Title="MemberInformation" Height="450" Width="800">
     <Canvas Height="NaN" Margin="0,0,0,-6" Width="NaN" RenderTransformOrigin="0.925,0.147" Background="#FF2F7104">
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="208" Canvas.Top="40" Background="White" HorizontalAlignment="Center" Height="352" VerticalAlignment="Top" Width="266"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="184" Canvas.Top="24" Background="White" HorizontalAlignment="Left" Height="382" VerticalAlignment="Top" Width="297"/>
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="531" Canvas.Top="123" Background="White" Height="266" Width="222" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" Canvas.Left="43" Canvas.Top="244" HorizontalAlignment="Center" Height="23" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Regular Member" Canvas.Left="21" Canvas.Top="251" HorizontalAlignment="Center" Height="23" VerticalAlignment="Top" Width="116" Checked="RadioButton_Checked"/>
         <TextBox Canvas.Left="21" TextWrapping="Wrap" Text="TextBox" Canvas.Top="79" Width="138" HorizontalAlignment="Center" VerticalAlignment="Top" Height="31"/>
         <TextBox Canvas.Left="21" TextWrapping="Wrap" Text="TextBox" Canvas.Top="151" Width="138" HorizontalAlignment="Center" VerticalAlignment="Center" Height="31"/>
-        <RadioButton Content="RadioButton" Canvas.Left="43" Canvas.Top="273" Height="23" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <RadioButton Content="Gold Member" Canvas.Left="21" Canvas.Top="273" Height="23" Width="116" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Label Content="First Name" Canvas.Left="20" Canvas.Top="40" Height="38" Width="125" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Background="{x:Null}" Foreground="White" FontSize="16"/>
         <Label Content="Last Name" Canvas.Left="21" Canvas.Top="115" Height="36" Width="106" FontWeight="Bold" Background="{x:Null}" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"/>
-        <Button Content="Add Members" Canvas.Left="21" Canvas.Top="340" Height="52" Width="138" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Add Members" Canvas.Left="21" Canvas.Top="340" Height="52" Width="138" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click"/>
         <Label Content="Transaction History" Canvas.Left="531" Canvas.Top="79" Height="36" Width="168" FontWeight="Bold" Background="{x:Null}" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"/>
-        <GroupBox Height="96" Header="Membership Type" Width="139" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="208" Canvas.Left="20" Foreground="White"/>
+        <Label Content="Membership Type" Canvas.Left="21" Canvas.Top="220" HorizontalAlignment="Center" VerticalAlignment="Center" Width="106" Foreground="White"/>
 
     </Canvas>
 </Window>
